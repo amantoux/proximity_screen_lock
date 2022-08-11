@@ -1,6 +1,6 @@
 name: proximity_screen_lock
 description: A plugin that can be used to bind screen activation to proximity sensor
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/amantoux/proximity_screen_lock
 repository: https://github.com/amantoux/proximity_screen_lock/tree/master/proximity_screen_lock
 
