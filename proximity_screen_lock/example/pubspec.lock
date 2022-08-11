@@ -134,35 +134,35 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "1.0.0"
   proximity_screen_lock_android:
     dependency: transitive
     description:
-      path: "../../proximity_screen_lock_android"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: proximity_screen_lock_android
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   proximity_screen_lock_default:
     dependency: transitive
     description:
-      path: "../../proximity_screen_lock_default"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: proximity_screen_lock_default
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   proximity_screen_lock_ios:
     dependency: transitive
     description:
-      path: "../../proximity_screen_lock_ios"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: proximity_screen_lock_ios
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   proximity_screen_lock_platform_interface:
     dependency: transitive
     description:
-      path: "../../proximity_screen_lock_platform_interface"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: proximity_screen_lock_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
