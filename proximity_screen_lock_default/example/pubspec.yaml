@@ -1,9 +1,9 @@
-name: proximity_screen_lock_web_example
-description: Demonstrates how to use the proximity_screen_lock_web plugin.
+name: proximity_screen_lock_default_example
+description: Demonstrates how to use the proximity_screen_lock_default plugin.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
@@ -18,7 +18,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  proximity_screen_lock_web:
+  proximity_screen_lock_default:
     # When depending on this package from a real application you should use:
     #   proximity_screen_lock_web: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
@@ -46,7 +46,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

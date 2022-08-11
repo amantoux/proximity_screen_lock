@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:proximity_screen_lock_web/proximity_screen_lock_default.dart';
+import 'package:proximity_screen_lock_default/proximity_screen_lock_default.dart';
 
 void main() {
   runApp(const MyApp());
