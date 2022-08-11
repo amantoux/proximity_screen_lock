@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _proximityScreenLock = ProximitySensorAndroid();
+  final _proximityScreenLock = ProximityScreenLockAndroid();
   var isActive = false;
 
   @override
