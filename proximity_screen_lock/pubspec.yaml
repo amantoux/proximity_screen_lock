@@ -2,6 +2,7 @@ name: proximity_screen_lock
 description: A plugin that can be used to bind screen activation to proximity sensor
 version: 1.0.0
 homepage: https://github.com/amantoux/proximity_screen_lock
+repository: https://github.com/amantoux/proximity_screen_lock/tree/master/proximity_screen_lock
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
@@ -13,13 +14,12 @@ dependencies:
   proximity_screen_lock_ios: ^1.0.0
   proximity_screen_lock_android: ^1.0.0
   proximity_screen_lock_default: ^1.0.0
-  proximity_screen_lock_platform_interface: ^1.0.0
+  proximity_screen_lock_platform_interface: ^1.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
 
 flutter:
   plugin:

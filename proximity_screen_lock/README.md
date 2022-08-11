@@ -1,18 +1,24 @@
-# proximity_screen_lock
+# Proximity Screen Lock
 
-A plugin that can be used to bind screen activation to proximity sensor
+[![pub package](https://img.shields.io/pub/v/proximity_screen_lock.svg)](https://pub.dartlang.org/packages/proximity_screen_lock)
 
-## Getting Started
+A Flutter plugin that can be used to bind screen activation to proximity sensor
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+# Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To activate the behavior
 
-The plugin project was generated without specifying the `--platforms` flag, no platforms are currently supported.
-To add platforms, run `flutter create -t plugin --platforms <platforms> .` in this directory.
-You can also find a detailed instruction on how to add platforms in the `pubspec.yaml` at https://flutter.dev/docs/development/packages-and-plugins/developing-packages#plugin-platforms.
+```dart
+if (ProximityLockScreen.isProximityLockSupported()) {
+  ProximityLockScreen.setActive(true)
+}
+```
+
+# Availability
+
+`ProximityLockScreen.isProximityLockAvailable()` will return `false` on Android devices that do not provide a proximity sensor.
+It will also return `false` for non-mobile devices
+
+|                            | iOS   | Android | Others     |
+|----------------------------|-------|---------|-------------|
+| `isProximityLockAvailable` |  `true`   | `true` or `false`       | `false` |
