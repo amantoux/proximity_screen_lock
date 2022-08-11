@@ -1,7 +1,8 @@
 name: proximity_screen_lock_platform_interface
-description: A platform interface plugin that can be used to bind screen activation to proximity sensor
-version: 0.0.1
-homepage:
+description: A platform interface plugin for proximity screen lock plugins
+version: 1.0.0
+homepage: https://github.com/amantoux/proximity_screen_lock
+repository: https://github.com/amantoux/proximity_screen_lock/proximity_screen_lock_platform_interface
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
