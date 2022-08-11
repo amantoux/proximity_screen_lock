@@ -14,6 +14,7 @@ class MethodChannelProximityScreenLockIos
     await methodChannel.invokeMethod('setActive', value);
   }
 
+  @override
   Future<bool> isProximityLockSupported() async {
     return true;
   }

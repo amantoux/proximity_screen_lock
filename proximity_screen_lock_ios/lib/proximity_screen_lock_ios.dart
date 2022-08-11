@@ -8,10 +8,12 @@ class ProximityScreenLockIos extends ProximityScreenLockPlatformInterface {
         MethodChannelProximityScreenLockIos();
   }
 
+  @override
   Future<void> setActive(bool value) async {
     ProximityScreenLockPlatformInterface.instance.setActive(value);
   }
 
+  @override
   Future<bool> isProximityLockSupported() async {
     return await ProximityScreenLockPlatformInterface.instance
         .isProximityLockSupported();
