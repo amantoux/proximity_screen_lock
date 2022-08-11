@@ -1,5 +1,5 @@
 # Proximity Screen Lock
-A Flutter plugin that de-activates the screen when proximity sensor detects somrthing
+A Flutter plugin that can be used to bind screen activation to proximity sensor
 
 To activate the behavior
 
