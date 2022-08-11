@@ -122,14 +122,14 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "1.0.0"
   proximity_screen_lock_platform_interface:
     dependency: transitive
     description:
-      path: "../../proximity_screen_lock_platform_interface"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: proximity_screen_lock_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
