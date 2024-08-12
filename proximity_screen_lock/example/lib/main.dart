@@ -55,7 +55,10 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(isSupported ? "Supported" : "Not supported", style: Theme.of(context).textTheme.bodyText1,),
+              Text(
+                isSupported ? "Supported" : "Not supported",
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
               TextButton(
                 onPressed: toggle,
                 child: Text(
