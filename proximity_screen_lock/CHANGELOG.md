@@ -1,3 +1,7 @@
+## 2.1.0
+
+* Upgrade to Flutter 3.27
+
 ## 2.0.0
 
 * Upgrade dependencies
