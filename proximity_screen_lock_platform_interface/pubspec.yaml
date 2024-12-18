@@ -1,6 +1,6 @@
 name: proximity_screen_lock_platform_interface
 description: A platform interface plugin for proximity screen lock plugins
-version: 2.1.0
+version: 2.1.1
 homepage: https://github.com/amantoux/proximity_screen_lock
 repository: https://github.com/amantoux/proximity_screen_lock/tree/master/proximity_screen_lock_platform_interface
 
@@ -11,9 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
+  plugin_platform_interface: ^2.1.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0

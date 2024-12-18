@@ -1,3 +1,7 @@
+## 2.1.1
+
+* Linting
+
 ## 2.1.0
 
 * Upgrade to Flutter 3.27

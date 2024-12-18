@@ -1,6 +1,7 @@
 ## 2.1.0
 
 * Upgrade to Flutter 3.27
+* Remove useless default plugin package
 
 ## 2.0.0
 

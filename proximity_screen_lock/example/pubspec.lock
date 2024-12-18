@@ -75,11 +75,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
-    description: flutter
-    source: sdk
-    version: "0.0.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -158,39 +153,31 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.0.0"
+    version: "2.1.0"
   proximity_screen_lock_android:
     dependency: transitive
     description:
       name: proximity_screen_lock_android
-      sha256: c0c31d85ae76b3be9bc5a457aaa13ebbc298bdda0ef5e8f1d0a685b5c1d65d8b
+      sha256: f2ccc79225dec24250c75126e47e9f45d2e4c3a6c9e6313b70c1e9ec5cca15c0
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
-  proximity_screen_lock_default:
-    dependency: transitive
-    description:
-      name: proximity_screen_lock_default
-      sha256: "76b6b4714fac93e64c339550c18c958a73b69ecc0e330e6c0a5d0baaeac0012f"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.0"
+    version: "2.1.0"
   proximity_screen_lock_ios:
     dependency: transitive
     description:
       name: proximity_screen_lock_ios
-      sha256: ed8c708e8ee7316387d8f8dfef66e47be3cc28ccf5b26ac5eb6d61d8cc87f6bf
+      sha256: e8a691d45e27cc64acb92babc00519780a670355aa11719ce078ed324226928e
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
+    version: "2.1.0"
   proximity_screen_lock_platform_interface:
     dependency: transitive
     description:
       name: proximity_screen_lock_platform_interface
-      sha256: fac4e04e9776f85098dd2e6b24e0b1f148b56d85582e40a8c62603d6d3a5ea4b
+      sha256: "6269d7a4dc0f5b4a0815339e4832c893b458876fff37fbb7827a877d01099884"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
+    version: "2.1.0"
   sky_engine:
     dependency: transitive
     description: flutter

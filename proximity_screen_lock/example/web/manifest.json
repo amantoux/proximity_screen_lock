@@ -1,11 +1,11 @@
 {
-    "name": "proximity_screen_lock_web_example",
-    "short_name": "proximity_screen_lock_web_example",
+    "name": "proximity_screen_lock_example",
+    "short_name": "proximity_screen_lock_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Demonstrates how to use the proximity_screen_lock_web plugin.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
