@@ -8,6 +8,8 @@ class MethodChannelProximityScreenLockAndroid
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('proximity_screen_lock_android');
+  @visibleForTesting
+  final eventChannel = const EventChannel('proximity_sensor_states');
 
   @override
   Future<void> setActive(bool value) async {
@@ -18,4 +20,8 @@ class MethodChannelProximityScreenLockAndroid
   Future<bool> isProximityLockSupported() async {
     return await methodChannel.invokeMethod('isProximityLockSupported');
   }
+
+  @override
+  Stream<bool> get proximityStates =>
+      eventChannel.receiveBroadcastStream().cast<bool>();
 }

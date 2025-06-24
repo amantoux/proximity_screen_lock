@@ -1,6 +1,6 @@
 name: proximity_screen_lock_example
 description: Demonstrates how to use the proximity_screen_lock plugin.
-version: 0.0.1
+version: 0.0.1+1
 publish_to: none
 
 environment:

@@ -1,3 +1,7 @@
+## 2.2.0
+
+* Add proximity sensor events
+
 ## 2.1.1
 
 * Cleanup

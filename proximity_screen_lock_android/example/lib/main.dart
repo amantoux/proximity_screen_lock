@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -16,7 +16,9 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final _proximityScreenLock = ProximityScreenLockAndroid();
-  var isActive = false;
+  StreamSubscription? _subsProximity;
+  var _isActive = false;
+  var _objectDetected = false;
 
   @override
   void initState() {
@@ -24,22 +26,32 @@ class _MyAppState extends State<MyApp> {
     setProximitySensorActive();
   }
 
+  @override
+  void dispose() {
+    _subsProximity?.cancel();
+    super.dispose();
+  }
+
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> setProximitySensorActive() async {
     try {
-      await _proximityScreenLock.setActive(isActive);
+      await _proximityScreenLock.setActive(_isActive);
     } catch (e) {
       debugPrint('Something went wrong: $e');
     }
   }
 
   void toggle() {
-    setState(() => isActive = !isActive);
-    setActive(isActive);
+    setState(() => _isActive = !_isActive);
+    setActive(_isActive);
   }
 
   void setActive(bool value) {
     _proximityScreenLock.setActive(value);
+    _subsProximity =
+        _proximityScreenLock.proximityStates.listen((objectDetected) {
+      setState(() => _objectDetected = objectDetected);
+    });
   }
 
   @override
@@ -50,11 +62,19 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: TextButton(
-            onPressed: toggle,
-            child: Text(
-              isActive ? 'De-activate' : 'Activate',
-            ),
+          child: Column(
+            children: [
+              TextButton(
+                onPressed: toggle,
+                child: Text(
+                  _isActive ? 'De-activate' : 'Activate',
+                ),
+              ),
+              if (_isActive)
+                Text(
+                  _objectDetected ? 'Object detected' : 'No object detected',
+                ),
+            ],
           ),
         ),
       ),
