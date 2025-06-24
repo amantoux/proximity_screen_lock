@@ -6,7 +6,10 @@ To activate the behavior
 
 ```dart
 if (ProximityLockScreen.isProximityLockSupported()) {
-  ProximityLockScreen.setActive(true)
+  ProximityLockScreen.setActive(true);
+  ProximityScreenLock.proximityStates.listen((objectDetected) async {
+    print(objectDetected ? 'Object detected' : 'No object detected');
+  });
 }
 ```
 
