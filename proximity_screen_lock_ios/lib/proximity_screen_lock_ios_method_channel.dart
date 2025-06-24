@@ -8,6 +8,8 @@ class MethodChannelProximityScreenLockIos
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('proximity_screen_lock_ios');
+  @visibleForTesting
+  final eventChannel = const EventChannel('proximity_sensor_states');
 
   @override
   Future<void> setActive(bool value) async {
@@ -18,4 +20,8 @@ class MethodChannelProximityScreenLockIos
   Future<bool> isProximityLockSupported() async {
     return true;
   }
+
+  @override
+  Stream<bool> get proximityStates =>
+      eventChannel.receiveBroadcastStream().cast<bool>();
 }

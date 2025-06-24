@@ -18,4 +18,8 @@ class ProximityScreenLockIos extends ProximityScreenLockPlatformInterface {
     return await ProximityScreenLockPlatformInterface.instance
         .isProximityLockSupported();
   }
+
+  @override
+  Stream<bool> get proximityStates =>
+      ProximityScreenLockPlatformInterface.instance.proximityStates;
 }

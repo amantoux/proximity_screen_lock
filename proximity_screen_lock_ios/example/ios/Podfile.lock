@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - proximity_screen_lock_ios (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - proximity_screen_lock_ios (from `.symlinks/plugins/proximity_screen_lock_ios/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  proximity_screen_lock_ios:
+    :path: ".symlinks/plugins/proximity_screen_lock_ios/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  proximity_screen_lock_ios: 4f6ea51910f155dac8f2dd97a243742cb7002cb4
+
+PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+
+COCOAPODS: 1.16.2

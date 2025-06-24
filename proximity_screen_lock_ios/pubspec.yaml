@@ -1,6 +1,6 @@
 name: proximity_screen_lock_ios
 description: A iOS Flutter plugin that can be used to bind screen activation to proximity sensor
-version: 2.1.1
+version: 2.2.0
 homepage: https://github.com/amantoux/proximity_screen_lock
 repository: https://github.com/amantoux/proximity_screen_lock/tree/master/proximity_screen_lock_ios
 
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  proximity_screen_lock_platform_interface: ^2.1.0
+  proximity_screen_lock_platform_interface: ^2.2.0
 
 dev_dependencies:
   flutter_test:
