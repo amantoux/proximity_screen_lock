@@ -18,4 +18,9 @@ class ProximityScreenLock {
     return await ProximityScreenLockPlatformInterface.instance
         .isProximityLockSupported();
   }
+
+  /// Subscribe to a stream of proximity sensor events.
+  /// `true` is emitted if proximity sensor detects something; `false` otherwise
+  static Stream<bool> get proximityStates =>
+      ProximityScreenLockPlatformInterface.instance.proximityStates;
 }
