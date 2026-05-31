@@ -1,3 +1,7 @@
+## 2.3.0
+
+* Support Flutter 3.44
+
 ## 2.2.0
 
 * Add proximity sensor events

@@ -153,29 +153,29 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.2.0"
+    version: "2.3.0"
   proximity_screen_lock_android:
     dependency: "direct overridden"
     description:
       path: "../../proximity_screen_lock_android"
       relative: true
     source: path
-    version: "2.2.0"
+    version: "2.3.0"
   proximity_screen_lock_ios:
     dependency: "direct overridden"
     description:
       path: "../../proximity_screen_lock_ios"
       relative: true
     source: path
-    version: "2.2.0"
+    version: "2.3.0"
   proximity_screen_lock_platform_interface:
     dependency: transitive
     description:
       name: proximity_screen_lock_platform_interface
-      sha256: d71383fc6bd22e3b7efca2dd5501b415ec3c725be9d578bf60036a6da4bb25f5
+      sha256: a3788e743298fb8c8f74ebde520a6b7ec93d5f80393263ac011d20169e93a4b9
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.0"
+    version: "2.3.0"
   sky_engine:
     dependency: transitive
     description: flutter
