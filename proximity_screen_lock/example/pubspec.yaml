@@ -15,6 +15,13 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
+dependency_overrides:
+  proximity_screen_lock_ios:
+    path: ../../proximity_screen_lock_ios
+  proximity_screen_lock_android:
+    path: ../../proximity_screen_lock_android
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

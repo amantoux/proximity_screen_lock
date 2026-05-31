@@ -155,20 +155,18 @@ packages:
     source: path
     version: "2.2.0"
   proximity_screen_lock_android:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: proximity_screen_lock_android
-      sha256: "43fb57f75cc75332343d527ec8039d226c7da273b5e032ef79d84de5e8e7e680"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../proximity_screen_lock_android"
+      relative: true
+    source: path
     version: "2.2.0"
   proximity_screen_lock_ios:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
-      name: proximity_screen_lock_ios
-      sha256: "7ab3860287c70e19880244a6dedeaa18dc1832501425374d080bdbce7ca961d2"
-      url: "https://pub.dev"
-    source: hosted
+      path: "../../proximity_screen_lock_ios"
+      relative: true
+    source: path
     version: "2.2.0"
   proximity_screen_lock_platform_interface:
     dependency: transitive
