@@ -7,10 +7,10 @@ private let methodChannelName: String = "proximity_screen_lock_ios"
 private let setActiveMethodName: String = "setActive"
 private let enableMethodName: String = "enable"
 
-public class SwiftProximityScreenLockIosPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
+public class ProximityScreenLockIosPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
 
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let instance = SwiftProximityScreenLockIosPlugin()
+    let instance = ProximityScreenLockIosPlugin()
 
     let eventChannel = FlutterEventChannel.init(name: streamHandlerName, binaryMessenger: registrar.messenger())
     eventChannel.setStreamHandler(instance)
