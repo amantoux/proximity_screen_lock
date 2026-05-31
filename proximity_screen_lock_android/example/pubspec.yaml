@@ -16,7 +16,7 @@ dependencies:
 
 dependency_overrides:
   proximity_screen_lock_platform_interface:
-    path: ../proximity_screen_lock_platform_interface
+    path: ../../proximity_screen_lock_platform_interface
 
 dev_dependencies:
   flutter_test:

@@ -13,7 +13,8 @@ A plugin that can be used to bind screen activation to proximity sensor
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'proximity_screen_lock_ios/Sources/proximity_screen_lock_ios/**/*.swift'
+  s.resource_bundles = {'proximity_screen_lock_ios_privacy' => ['proximity_screen_lock_ios/Sources/proximity_screen_lock_ios/PrivacyInfo.xcprivacy']}
   s.dependency 'Flutter'
   s.platform = :ios, '9.0'
 
